@@ -1,0 +1,291 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfla2hlywf8ie"]
+
+[ext_resource type="Script" path="res://ui/pain_card.gd" id="1_5vct2"]
+[ext_resource type="Texture2D" uid="uid://d4a5so2gqq555" path="res://ui/PainCard2.png" id="1_364xe"]
+[ext_resource type="Texture2D" uid="uid://barfgwowhx4mp" path="res://ui/PainCard1 (2).png" id="1_vio31"]
+
+[node name="PainCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5vct2")
+
+[node name="h1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -231.0
+offset_top = -344.0
+offset_right = -211.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="h2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -344.0
+offset_right = -187.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="h3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.0
+offset_top = -344.0
+offset_right = -164.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="h4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -344.0
+offset_right = -141.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="h5" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -137.0
+offset_top = -344.0
+offset_right = -117.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="s1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.0
+offset_top = -344.0
+offset_right = -47.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="s2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.0
+offset_top = -344.0
+offset_right = -23.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="s3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -344.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="s4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 3.0
+offset_top = -344.0
+offset_right = 23.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="s5" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 27.0
+offset_top = -344.0
+offset_right = 47.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="j1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 107.0
+offset_top = -344.0
+offset_right = 127.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="j2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 131.0
+offset_top = -344.0
+offset_right = 151.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="j3" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 154.0
+offset_top = -344.0
+offset_right = 174.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="j4" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 177.0
+offset_top = -344.0
+offset_right = 197.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="j5" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 201.0
+offset_top = -344.0
+offset_right = 221.0
+offset_bottom = 475.672
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_364xe")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="card" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -610.0
+offset_right = 300.0
+offset_bottom = 610.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vio31")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

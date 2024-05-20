@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhkhm5q6vohnp"]
+
+[ext_resource type="Script" path="res://ui/message.gd" id="1_8enb2"]
+[ext_resource type="Texture2D" uid="uid://cybpslwfxfxvy" path="res://ui/message background.png" id="1_yequk"]
+[ext_resource type="FontFile" uid="uid://clspuba753avr" path="res://ui/advanced_pixel-7.ttf" id="2_kl5vv"]
+
+[node name="Message" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8enb2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -361.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_yequk")
+
+[node name="MainText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -196.0
+offset_right = 44.0
+offset_bottom = -173.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kl5vv")
+theme_override_font_sizes/font_size = 40
+text = "sorry, little one, i do not ask for anything from doc, thy different houses"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="Who" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -466.0
+offset_top = -304.0
+offset_right = -390.0
+offset_bottom = -268.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kl5vv")
+theme_override_font_sizes/font_size = 35
+text = "villager"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

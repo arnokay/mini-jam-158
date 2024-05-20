@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://b36xkrrk0kqew"]
+
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_1fc8k"]
+[ext_resource type="PackedScene" uid="uid://dy1k0qeht8y4a" path="res://entities/interaction_ray/interaction_raycast.tscn" id="2_vdgwl"]
+[ext_resource type="Shader" path="res://scenes/world/camera.gdshader" id="3_jdd5h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ew7fd"]
+render_priority = 0
+shader = ExtResource("3_jdd5h")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2x5jb"]
+material = SubResource("ShaderMaterial_ew7fd")
+size = Vector2(3, 3)
+
+[node name="MainCamera" type="Camera3D"]
+
+[node name="PhantomCameraHost" type="Node" parent="."]
+script = ExtResource("1_1fc8k")
+
+[node name="InteractionRaycast" parent="." instance=ExtResource("2_vdgwl")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -0.0938506)
+mesh = SubResource("PlaneMesh_2x5jb")

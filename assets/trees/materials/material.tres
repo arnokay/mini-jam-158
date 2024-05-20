@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cos00ehkylgui"]
+
+[ext_resource type="Texture2D" uid="uid://ckyjeqvk0dnu" path="res://assets/trees/Textures/Colorsheet Tree Normal.png" id="1_m1win"]
+
+[resource]
+albedo_texture = ExtResource("1_m1win")

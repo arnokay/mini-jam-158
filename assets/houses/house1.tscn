@@ -1,0 +1,201 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvm15ooekukm0"]
+
+[ext_resource type="PackedScene" uid="uid://cbp6irwyn2blh" path="res://assets/houses/models/House_01_full.fbx" id="1_tv860"]
+[ext_resource type="Material" uid="uid://cx2v16kuiklqr" path="res://assets/houses/materials/material.tres" id="2_7xg4e"]
+
+[node name="Root Scene" instance=ExtResource("1_tv860")]
+
+[node name="WINDOW_03_1" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_triangles_up_wood_1" parent="RootNode" index="1"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WALL_01_1" parent="RootNode" index="2"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_triangles_up_wood_1_001" parent="RootNode" index="3"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_001" parent="RootNode" index="4"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_002" parent="RootNode" index="5"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_003" parent="RootNode" index="6"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_004" parent="RootNode" index="7"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_005" parent="RootNode" index="8"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_006" parent="RootNode" index="9"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_007" parent="RootNode" index="10"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_008" parent="RootNode" index="11"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_009" parent="RootNode" index="12"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_010" parent="RootNode" index="13"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_011" parent="RootNode" index="14"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_012" parent="RootNode" index="15"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_013" parent="RootNode" index="16"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_014" parent="RootNode" index="17"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_015" parent="RootNode" index="18"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_016" parent="RootNode" index="19"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_017" parent="RootNode" index="20"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_018" parent="RootNode" index="21"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_019" parent="RootNode" index="22"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_020" parent="RootNode" index="23"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_021" parent="RootNode" index="24"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_022" parent="RootNode" index="25"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1_023" parent="RootNode" index="26"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_1" parent="RootNode" index="27"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_001" parent="RootNode" index="28"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_002" parent="RootNode" index="29"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_003" parent="RootNode" index="30"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_004" parent="RootNode" index="31"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_005" parent="RootNode" index="32"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_006" parent="RootNode" index="33"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_007" parent="RootNode" index="34"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_008" parent="RootNode" index="35"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_009" parent="RootNode" index="36"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_010" parent="RootNode" index="37"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1_011" parent="RootNode" index="38"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_base_small_1" parent="RootNode" index="39"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WINDOW_03_1_001" parent="RootNode" index="40"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WALL_01_1_001" parent="RootNode" index="41"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WALL_01_1_002" parent="RootNode" index="42"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WALL_01_1_003" parent="RootNode" index="43"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WALL_02_2" parent="RootNode" index="44"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WINDOW_07_3" parent="RootNode" index="45"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="WINDOW_07_4" parent="RootNode" index="46"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="DOOR_05_2" parent="RootNode" index="47"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_left_wood_2" parent="RootNode" index="48"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_2" parent="RootNode" index="49"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_3" parent="RootNode" index="50"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_4" parent="RootNode" index="51"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_right_wood_3" parent="RootNode" index="52"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_left_wood_3" parent="RootNode" index="53"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_5" parent="RootNode" index="54"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_right_wood_5" parent="RootNode" index="55"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_6" parent="RootNode" index="56"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_triangles_up_wood_2" parent="RootNode" index="57"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_left_wood_4" parent="RootNode" index="58"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_up_quad_7" parent="RootNode" index="59"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_left_wood_5" parent="RootNode" index="60"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_right_wood_6" parent="RootNode" index="61"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_trinagle_right_wood_7" parent="RootNode" index="62"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_triangle_window_grid_9" parent="RootNode" index="63"]
+surface_material_override/0 = ExtResource("2_7xg4e")
+
+[node name="ROOF_triangle_window_grid_10" parent="RootNode" index="64"]
+surface_material_override/0 = ExtResource("2_7xg4e")

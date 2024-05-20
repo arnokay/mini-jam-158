@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://csahbs5ufmjx0"]
+
+[ext_resource type="Script" path="res://behaviors/interactable.gd" id="1_piosy"]
+[ext_resource type="Script" path="res://entities/common/interactable_door/door_interaction.gd" id="1_wsmni"]
+[ext_resource type="Material" uid="uid://db78pvlu04v1m" path="res://entities/common/outline/material.tres" id="2_xnxim"]
+[ext_resource type="AudioStream" uid="uid://cbwskhiex6j1" path="res://assets/sound/zapsplat_horror_monster_creature_growl_mumbling_nonsense_001_59752.mp3" id="4_inals"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_adk47"]
+size = Vector3(1.5, 2, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_udowp"]
+material = ExtResource("2_xnxim")
+size = Vector2(0.01, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pc1jf"]
+material = ExtResource("2_xnxim")
+size = Vector2(0.01, 1.5)
+
+[node name="door_interaction" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.535143, 0.5, 5.43332)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_wsmni")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50648, 0)
+shape = SubResource("BoxShape3D_adk47")
+
+[node name="Interactable" type="Node3D" parent="."]
+script = ExtResource("1_piosy")
+
+[node name="outline" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="outline"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0103403, 0.663629, -0.028307)
+light_color = Color(0.816979, 0.385161, 0.530773, 1)
+light_energy = 3.591
+light_size = 0.072
+omni_range = 1.11
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="outline"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.74592, -0.485, 0)
+mesh = SubResource("PlaneMesh_udowp")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="outline"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.485, 0.495)
+mesh = SubResource("PlaneMesh_pc1jf")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="outline"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.740297, -0.485, 0)
+mesh = SubResource("PlaneMesh_udowp")
+skeleton = NodePath("../..")
+
+[node name="ResponseSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_inals")
+volume_db = -28.0
+
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]

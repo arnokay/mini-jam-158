@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://ymh1huq4g2jx"]
+
+[ext_resource type="PackedScene" uid="uid://bn2b7a7lwxexe" path="res://entities/character/character.tscn" id="1_mny3h"]
+[ext_resource type="PackedScene" uid="uid://dvm15ooekukm0" path="res://assets/houses/house1.tscn" id="2_xxsxy"]
+[ext_resource type="PackedScene" uid="uid://coke70f6xb8vo" path="res://assets/rocks/rock_type_1_01.tscn" id="3_3ukn8"]
+[ext_resource type="PackedScene" uid="uid://gnaxn7yk8kum" path="res://assets/rocks/rock_type_2_01.tscn" id="4_0jgn1"]
+[ext_resource type="PackedScene" uid="uid://cupet8iwe0626" path="res://assets/rocks/rock_type_3_03.tscn" id="5_jmtmn"]
+[ext_resource type="PackedScene" uid="uid://b243gx2qn1r3g" path="res://assets/trees/tree_type_0_01.tscn" id="6_r62d2"]
+[ext_resource type="PackedScene" uid="uid://u2q82eoyobft" path="res://assets/trees/tree_type_0_04.tscn" id="7_6g74q"]
+[ext_resource type="PackedScene" uid="uid://cf6j0gfmd5yxy" path="res://assets/people/city_dwellers_1.tscn" id="8_kxmuu"]
+
+[node name="SizeComapre" type="Node3D"]
+
+[node name="Character" parent="." instance=ExtResource("1_mny3h")]
+
+[node name="Root Scene" parent="." instance=ExtResource("2_xxsxy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.84978, 0, 0)
+
+[node name="Rock Type1 01" parent="." instance=ExtResource("3_3ukn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.69884, 0, 0)
+
+[node name="Rock Type2 01" parent="." instance=ExtResource("4_0jgn1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.50856, 0, 0)
+
+[node name="Rock Type3 03" parent="." instance=ExtResource("5_jmtmn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8504, 0, 0)
+
+[node name="Tree Type0 01" parent="." instance=ExtResource("6_r62d2")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.66332, 0, 11.9451)
+
+[node name="Tree Type0 04" parent="." instance=ExtResource("7_6g74q")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -8.02035)
+
+[node name="Root Scene2" parent="." instance=ExtResource("8_kxmuu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.57197, 0, 0)

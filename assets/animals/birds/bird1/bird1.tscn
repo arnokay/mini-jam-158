@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd1ly2tn1rrdr"]
+
+[ext_resource type="PackedScene" uid="uid://8mo8k74iaq48" path="res://assets/animals/birds/bird1/Character_Bird.fbx" id="1_443n0"]
+[ext_resource type="Material" uid="uid://b7mr46yj8bgug" path="res://assets/animals/materials/material.tres" id="2_ubhjh"]
+
+[node name="Bird1" instance=ExtResource("1_443n0")]
+
+[node name="Character_Bird_Model" parent="RootNode/Character_Bird/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_ubhjh")

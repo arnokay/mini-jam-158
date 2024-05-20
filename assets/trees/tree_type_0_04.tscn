@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://u2q82eoyobft"]
+
+[ext_resource type="PackedScene" uid="uid://cmwska5unw313" path="res://assets/trees/source/Tree Type0 04.dae" id="1_gldd6"]
+[ext_resource type="Texture2D" uid="uid://ckyjeqvk0dnu" path="res://assets/trees/Textures/Colorsheet Tree Normal.png" id="2_o5lxc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2s18"]
+albedo_texture = ExtResource("2_o5lxc")
+
+[node name="Tree Type0 04" instance=ExtResource("1_gldd6")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="Tree_Type0_04_mesh" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_d2s18")

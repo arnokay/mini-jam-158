@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cx2v16kuiklqr"]
+
+[ext_resource type="Texture2D" uid="uid://v66f16cqwyyb" path="res://assets/houses/textures/House_texture_atlas_orange_windows.png" id="1_j2osk"]
+
+[resource]
+albedo_texture = ExtResource("1_j2osk")
+emission = Color(0.462291, 0.462291, 0.462291, 1)

@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://cupet8iwe0626"]
+
+[ext_resource type="PackedScene" uid="uid://58lgi0w7y2rm" path="res://assets/rocks/models/Rock Type3 03.dae" id="1_mjg1u"]
+[ext_resource type="Texture2D" uid="uid://w25y4m28h0tw" path="res://assets/rocks/textures/Colorsheet Rock Sand.png" id="2_v3qpb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23hos"]
+albedo_texture = ExtResource("2_v3qpb")
+
+[node name="Rock Type3 03" instance=ExtResource("1_mjg1u")]
+
+[node name="Rock_Type3_03_mesh" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_23hos")

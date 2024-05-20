@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2otag1loeyyh"]
+
+[ext_resource type="FontFile" uid="uid://clspuba753avr" path="res://ui/advanced_pixel-7.ttf" id="1_7hxr2"]
+
+[node name="Help" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.0
+offset_top = 26.0
+offset_right = -55.0
+offset_bottom = 49.0
+grow_horizontal = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_7hxr2")
+theme_override_font_sizes/font_size = 30
+text = "movement: W A S D
+look around: MOUSE
+up: SPACE
+speed up: SHIFT
+interact: E
+make SWOOP in air: F"

@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbfennt8y0aab"]
+
+[ext_resource type="PackedScene" uid="uid://b5nxwiyg68rgp" path="res://assets/animals/birds/bird2/Character_Finch.fbx" id="1_r40sy"]
+[ext_resource type="Material" uid="uid://b7mr46yj8bgug" path="res://assets/animals/materials/material.tres" id="2_0itnu"]
+
+[node name="Root Scene" instance=ExtResource("1_r40sy")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="Skeleton3D" parent="RootNode/Character_Finch/Bones_and_Cons" index="0"]
+bones/0/position = Vector3(-9.62965e-37, 0.00485421, -0.000217777)
+bones/0/rotation = Quaternion(-0.357833, -0.609881, 0.357833, 0.609881)
+bones/1/rotation = Quaternion(-8.28175e-17, 6.9607e-17, -0.105149, 0.994457)
+bones/3/rotation = Quaternion(0.691116, 0.722744, -3.35192e-17, 1.23652e-16)
+bones/4/rotation = Quaternion(0.505447, 0.86147, 0.0247615, -0.0422028)
+bones/5/rotation = Quaternion(0.861469, -0.505447, 0.0422028, 0.0247615)
+bones/6/rotation = Quaternion(0.0841786, 0.989033, 0.121307, 0.00360479)
+bones/7/rotation = Quaternion(0.815573, -0.578655, -1.84549e-17, 6.19851e-17)
+bones/8/rotation = Quaternion(-0.00441461, -0.00322942, 0.354248, 0.935136)
+bones/10/rotation = Quaternion(0.989033, -0.0841787, -0.00360487, 0.121307)
+bones/11/rotation = Quaternion(0.815573, -0.578655, -1.43195e-07, 8.66352e-08)
+bones/12/rotation = Quaternion(-0.00441452, -0.00322934, 0.354248, 0.935135)
+
+[node name="Finch_Model" parent="RootNode/Character_Finch/Bones_and_Cons/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_0itnu")
+
+[node name="Root_Con" parent="RootNode/Character_Finch/Bones_and_Cons/Global_Con" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.000132717, 0)
+
+[node name="Tail_Con" parent="RootNode/Character_Finch/Bones_and_Cons/Global_Con/Root_Con" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999995, -0.00312611, 0, 0.00312611, 0.999995, 0, -2.4813e-05, -3.02284e-05)
+
+[node name="Head_Con" parent="RootNode/Character_Finch/Bones_and_Cons/Global_Con/Root_Con" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999984, -0.00558675, 0, 0.00558675, 0.999984, 0, 1.93527e-05, -6.74819e-05)
+
+[node name="L_Leg_Ik" parent="RootNode/Character_Finch/Bones_and_Cons" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, -0.00196031, 0, 0.00196031, 0.999998, 0.00332441, 0.000671632, 0.00117174)
+
+[node name="R_Leg_Ik" parent="RootNode/Character_Finch/Bones_and_Cons" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, -0.00196031, 0, 0.00196031, 0.999998, -0.00332441, 0.000671632, 0.00117174)
+
+[node name="L_Foot_Ik" parent="RootNode/Character_Finch/Bones_and_Cons" index="4"]
+transform = Transform3D(0.221497, -0.0697031, -0.972667, -0.272303, 0.953344, -0.130328, 0.93637, 0.293728, 0.192183, 0.00378948, 0.000101138, 0.00313428)
+
+[node name="R_Foot_Ik" parent="RootNode/Character_Finch/Bones_and_Cons" index="5"]
+transform = Transform3D(0.221497, -0.0697031, -0.972667, 0.272303, -0.953344, 0.130328, -0.93637, -0.293728, -0.192183, -0.00378948, 0.000101138, 0.00313429)

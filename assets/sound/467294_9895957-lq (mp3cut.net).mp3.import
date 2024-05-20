@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfget7yksebh3"
+path="res://.godot/imported/467294_9895957-lq (mp3cut.net).mp3-757a420c49aa755a66b6f7f1ab33aa85.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/467294_9895957-lq (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/467294_9895957-lq (mp3cut.net).mp3-757a420c49aa755a66b6f7f1ab33aa85.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

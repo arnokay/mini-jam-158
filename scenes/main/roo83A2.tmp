@@ -1,0 +1,111 @@
+[gd_scene load_steps=19 format=3 uid="uid://cpwjqoxk54ond"]
+
+[ext_resource type="PackedScene" uid="uid://dtkolx8cx0kj5" path="res://ui/inventory/inventory.tscn" id="1_ulkp6"]
+[ext_resource type="PackedScene" uid="uid://bn2b7a7lwxexe" path="res://entities/character/character.tscn" id="1_xnskv"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_e8s33"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="3_1lgtw"]
+[ext_resource type="PackedScene" uid="uid://dy1k0qeht8y4a" path="res://entities/interaction_ray/interaction_raycast.tscn" id="3_pckmr"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_lxhr6"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/camera_3d_resource.gd" id="5_nbr1n"]
+[ext_resource type="Script" path="res://behaviors/interactable.gd" id="7_rxrm7"]
+[ext_resource type="PackedScene" uid="uid://cm0j770bphxkx" path="res://entities/button/button.tscn" id="8_13l6f"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hm4m0"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_idc4o"]
+sky_material = SubResource("ProceduralSkyMaterial_hm4m0")
+
+[sub_resource type="Environment" id="Environment_4jx2p"]
+background_mode = 2
+sky = SubResource("Sky_idc4o")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lm266"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xnejy"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="Resource" id="Resource_yuie7"]
+script = ExtResource("4_lxhr6")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="Resource" id="Resource_qthnj"]
+script = ExtResource("5_nbr1n")
+cull_mask = 1048575
+h_offset = 0.0
+v_offset = 0.0
+fov = 75.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_viuja"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sb5y2"]
+
+[node name="root" type="Node3D"]
+
+[node name="Inventory" parent="." instance=ExtResource("1_ulkp6")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4jx2p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_lm266")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_xnejy")
+
+[node name="Character" parent="." instance=ExtResource("1_xnskv")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.5, 0)
+
+[node name="PlayerCamera" type="Node3D" parent="." node_paths=PackedStringArray("look_at_target")]
+unique_name_in_owner = true
+transform = Transform3D(0.836113, 0.0403026, -0.547074, -1.86264e-09, 0.997297, 0.0734703, 0.548557, -0.0614295, 0.833853, -0.547074, 1.07347, 0.833853)
+script = ExtResource("3_1lgtw")
+priority = 10
+follow_mode = 6
+look_at_target = NodePath("../StaticBody3D2")
+tween_resource = SubResource("Resource_yuie7")
+tween_on_load = false
+camera_3d_resource = SubResource("Resource_qthnj")
+follow_offset = Vector3(0, 0.5, 0)
+follow_damping = true
+margin = 0.5
+
+[node name="MainCamera" type="Camera3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(0.836113, 0.0403026, -0.547074, -1.86264e-09, 0.997297, 0.0734703, 0.548557, -0.0614295, 0.833853, -0.547074, 1.07347, 0.833853)
+
+[node name="PhantomCameraHost" type="Node" parent="MainCamera"]
+script = ExtResource("2_e8s33")
+
+[node name="InteractionRaycast" parent="MainCamera" instance=ExtResource("3_pckmr")]
+target_position = Vector3(0, 0, -3)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.67589, 1.14064, -4.0786)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D2"]
+mesh = SubResource("CapsuleMesh_viuja")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+shape = SubResource("CapsuleShape3D_sb5y2")
+
+[node name="Interactable" type="Node3D" parent="StaticBody3D2"]
+script = ExtResource("7_rxrm7")
+
+[node name="Button" parent="." instance=ExtResource("8_13l6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228708, 0.326335, -3.0155)

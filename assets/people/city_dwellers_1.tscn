@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf6j0gfmd5yxy"]
+
+[ext_resource type="PackedScene" uid="uid://dsdpjcdkoldd6" path="res://assets/people/models/city_dwellers_1.fbx" id="1_ttxua"]
+[ext_resource type="Material" uid="uid://bdlhk1onv54ix" path="res://assets/people/material/material.tres" id="2_q3hs7"]
+
+[node name="Root Scene" instance=ExtResource("1_ttxua")]
+
+[node name="ciry_dwellers_1" parent="RootNode/Armature/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_q3hs7")
